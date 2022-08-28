@@ -4,5 +4,16 @@
     .left-logo
         color: white
         font-weight: 800
-        font-size: 3.0vh
-        margin: 0.1rem 0.5rem
+        font-size: 2.5rem
+
+//Larger than mobile screens
+@media (min-width: 576px)
+    .content-left
+        padding: 0
+
+//Mobile screens
+@media (max-width: 576px)
+    .content-left
+        background-image: linear-gradient(to right,#3718B2, #CD33A4)
+        .left-logo
+            font-size: 3vh
