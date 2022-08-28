@@ -15,7 +15,7 @@
     <div class="content-container">
         <div class="content row m-0 d-block d-sm-flex">
             <div class="content-left col-12 col-sm-2">
-                <h1 class="left-logo py-2 py-sm-0 m-sm-5">Logo.</h1>
+                <h1 class="left-logo py-2 py-sm-0">Logo.</h1>
             </div>
             <div class="content-right col-12 col-sm-10 w-100">
                 <div class="row m-0 m-sm-auto">
@@ -26,13 +26,13 @@
                             </h2>
                         </div>
                         <div class="loan-app-interact-container">
-                            <div class="row input-group m-0">
+                            <form class="loan-app-form row input-group m-0">
                                 <label class="loan-app-label col-12 p-0">Loan amount</label>
                                 <div class="loan-app-amount rounded col-12">
-                                    £<input type="number" min="1" step="any" class="form-control">
+                                    £<input type="number" min="1" step="any" class="form-control" required>
                                 </div>
                                 <label class="loan-app-label col-12 p-0">Loan terms (months)</label>
-                                <div class="row mx-0 buttons" data-toggle="buttons">
+                                <div class="row mx-0 buttons" data-toggle="buttons" required>
                                     <label class="col-12 col-sm-4 btn btn-light">
                                         <input class="loan-term-radio" type="radio" name="options" id="option1"> 12
                                     </label>
@@ -43,8 +43,8 @@
                                         <input class="loan-term-radio" type="radio" name="options" id="option3"> 24
                                     </label>
                                 </div>
-                                <button class="submit-btn col-12 rounded">Submit</button>
-                            </div>
+                                <button type="submit" value="Submit" class="submit-btn col-12 rounded">Submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>

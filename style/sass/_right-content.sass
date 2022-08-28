@@ -43,22 +43,30 @@
                     background-color: #F2F2F2
                     padding: 1.25rem 0
                     border: 1px #CBCBCB solid
+                    transition: 0.2s
                     &:not(:disabled)
                         &:not(.disabled).active
                             background-color: #474747
                             color: white
+                    &:hover
+                        color: white
+                        background-color: #474747
+                        transition: 0.2s
                     .loan-term-radio
                         visibility: hidden
                         width: 0rem
             .submit-btn
+                cursor: pointer
                 background-color: #7600FF
                 color: white
                 border: none
                 padding: 1rem
                 font-weight: 700
                 font-size: 1.625rem
+                transition: 0.2s
                 &:hover
                     background-color: #b271fc
+                    transition: 0.2s
 
 //Larger than mobile screens
 @media (min-width: 576px)

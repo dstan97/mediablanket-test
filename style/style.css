@@ -23,6 +23,9 @@ body .content-container {
   .content-left {
     padding: 0;
   }
+  .content-left .left-logo {
+    margin: 2rem 3rem;
+  }
 }
 @media (max-width: 576px) {
   .content-left {
@@ -82,25 +85,34 @@ body .content-container {
   background-color: #F2F2F2;
   padding: 1.25rem 0;
   border: 1px #CBCBCB solid;
+  transition: 0.2s;
 }
 .content-right .loan-app-container .loan-app-interact-container .buttons .btn-light:not(:disabled):not(.disabled).active {
   background-color: #474747;
   color: white;
+}
+.content-right .loan-app-container .loan-app-interact-container .buttons .btn-light:hover {
+  color: white;
+  background-color: #474747;
+  transition: 0.2s;
 }
 .content-right .loan-app-container .loan-app-interact-container .buttons .btn-light .loan-term-radio {
   visibility: hidden;
   width: 0rem;
 }
 .content-right .loan-app-container .loan-app-interact-container .submit-btn {
+  cursor: pointer;
   background-color: #7600FF;
   color: white;
   border: none;
   padding: 1rem;
   font-weight: 700;
   font-size: 1.625rem;
+  transition: 0.2s;
 }
 .content-right .loan-app-container .loan-app-interact-container .submit-btn:hover {
   background-color: #b271fc;
+  transition: 0.2s;
 }
 
 @media (min-width: 576px) {
